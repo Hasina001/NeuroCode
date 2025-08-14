@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+.container {
+  @apply mx-auto md:max-w-7xl max-w-6xl;
+}
+
+:root {
+  /* couleur principal  */
+  --color-primary: #202B2D;
+  --color-secondary: #015967;
+}
+
+.primary {
+  color: var(--color-primary)
+}
+
+.secondary {
+  color: var(--color-secondary)
+}
+
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
