@@ -41,7 +41,7 @@ const Apropos = () => {
       </section>
       
       {/* Second bloc */}
-      <section className="min-h-screen flex flex-col md:flex-row justify-center md:justify-between items-center text-white px-4 md:px-6 py-8 space-y-6 md:space-y-0">
+      <section className="min-h-screen flex flex-col md:flex-row justify-center md:justify-between items-center text-white px-4 md:px-6 py-8 space-y-6 md:space-y-0 shadow-lg">
 
         {/* Presentation de l'equipe */}
         <motion.div
@@ -75,9 +75,22 @@ const Apropos = () => {
             Notre expertise nous permet de créer des solutions fiables,
             évolutives et innovantes.
           </p>
-        </motion.div>
+
+        </motion.div> 
 
       </section>
+
+      {/* boutton  Contact */}
+      <div className="mt-6 md:col-spam-2 flex justify-center">
+        <motion.button
+          initial={{ scale: 0.8, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.4, delay: 0.2 }}
+          className="px-6 py-3 bg-[#015967] text-white rounded-lg shadow-lg hover:bg-[#14a58] transition"
+        >
+          <a href="/Contact">Nous contacter</a>
+        </motion.button>
+      </div>
 
     </div>
   )
