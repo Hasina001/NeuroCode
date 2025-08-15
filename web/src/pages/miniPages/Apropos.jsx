@@ -4,7 +4,7 @@ const Apropos = () => {
   return (
     <div className="overflow-x-hidden">
       {/* Premier bloc */}
-      <section className="min-sm:h-screen flex flex-col justify-center items-center bg-[#202B2D] text-white px-6">
+      <section className="min-sm:h-screen flex flex-col justify-center items-center text-white px-6 shadow-lg">
 
         {/* Mission */}
         <motion.div
@@ -14,7 +14,7 @@ const Apropos = () => {
           viewport={{ once: true }}
           className="bg-[#015967] p-8 m-4 rounded-lg shadow-lg max-w-3xl"
         >
-          <h2 className="text-3xl font-bold mb-4">Notre Mission</h2>
+          <h2 className="flex flex-col justify-center items-center text-3xl font-bold mb-4">Notre Mission</h2>
           <p>
             Fournir des solutions informatiques complètes et innovantes : 
             création de sites web, administration réseau, intelligence artificielle,
