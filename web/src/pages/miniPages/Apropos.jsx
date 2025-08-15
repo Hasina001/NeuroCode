@@ -4,7 +4,7 @@ const Apropos = () => {
   return (
     <div className="overflow-x-hidden">
       {/* Premier bloc */}
-      <section className="min-h-screen flex justify-between items-center text-white px-6 shadow-lg">
+      <section className="min-h-screen flex flex-col md:flex-row justify-center md:justify-between items-center text-white px-4 md:px-6 py-8 space-y-6 md:space-y-0 shadow-lg">
 
         {/* Mission */}
         <motion.div
@@ -12,7 +12,7 @@ const Apropos = () => {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: false }}
-          className="p-8 m-4 rounded-lg shadow-lg max-w-3xl bg-gradient-to-r from-[#202B2D] to-[#015967]"
+          className=" p-8 m-4 rounded-lg shadow-lg max-w-3xl bg-gradient-to-r from-[#202B2D] to-[#015967]"
         >
           <h2 className="flex justify-center text-3xl font-bold mb-4">Notre Mission</h2>
           <p>
@@ -41,7 +41,7 @@ const Apropos = () => {
       </section>
       
       {/* Second bloc */}
-      <section className="min-h-screen flex justify-between items-center text-white px-6 shadow-lg">
+      <section className="min-h-screen flex flex-col md:flex-row justify-center md:justify-between items-center text-white px-4 md:px-6 py-8 space-y-6 md:space-y-0">
 
         {/* Presentation de l'equipe */}
         <motion.div
