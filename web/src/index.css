@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 .container {
   @apply mx-auto md:max-w-7xl max-w-6xl;
 }
@@ -10,12 +11,23 @@
   --color-secondary: #015967;
 }
 
+/* body {
+  background-color: var(--color-secondary);
+  background-image: url('./assets//bg_two.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+} */
+
 .primary {
   color: var(--color-primary)
 }
 
 .secondary {
   color: var(--color-secondary)
+}
+
+.font {
+  font-family: "sans-serif";
 }
 
 .logo {
