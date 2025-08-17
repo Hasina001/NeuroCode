@@ -2,95 +2,119 @@ import { motion } from "framer-motion";
 
 const Apropos = () => {
   return (
-    <div className="overflow-x-hidden">
-      {/* Premier bloc */}
-      <section className="min-h-screen flex flex-col md:flex-row justify-center md:justify-between items-center text-white px-4 md:px-6 py-8 space-y-6 md:space-y-0 shadow-lg">
+    <div className="container relative                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ">
+        {/* Notre equipe */}
+      <div className="container flex justify-between items-start p-10 md:p-40 mb-54">
 
-        {/* Mission */}
-        <motion.div
-          initial={{ x: -200, opacity: 0 }} 
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: false }}
-          className=" p-8 m-4 rounded-lg shadow-lg max-w-3xl bg-gradient-to-r from-[#202B2D] to-[#015967]"
+        <motion.div 
+        initial={{ x: -400, opacity: 0 }}
+        whileInView={{ x: -250, opacity: 1 }}
+        transition={{ duration: 0.8 }}
+        className="relative w-96 ml-40 -mt-20 rounded-2xl shadow-2xl "
         >
-          <h2 className="flex justify-center text-3xl font-bold mb-4">Notre Mission</h2>
-          <p>
-            Fournir des solutions informatiques complètes et innovantes : 
-            création de sites web, administration réseau, intelligence artificielle,
-            développement de logiciels sur mesure et conception de systèmes embarqués.
-          </p>
+        
+          <img 
+          src="/travail-d-équipe-team-together-collaboration-business-communication-outd-48568990.webp" 
+          alt="equipe" 
+          className="h-full rounded-2xl object-contain"/>
+        
         </motion.div>
-
-        {/* Vison */}
-        <motion.div
-          initial={{ x: 200, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.1 }}
-          viewport={{ once: false }}
-          className="p-8 m-4 rounded-lg shadow-lg max-w-3xl bg-gradient-to-r from-[#015967] to-[#202B2D]"
+        
+        <motion.div 
+        initial={{ x: 400, opacity: 0 }}
+        whileInView={{ x: -450, opacity: 1 }}
+        transition={{ duration: 0.8, delay: 0.5 }}
+        className="mt-12  ml-8 max-w-md bg-[#015967] rounded-2xl shadow-2xl"
         >
-          <h2 className="flex justify-center text-3xl font-bold mb-4">Notre vision</h2>
-          <p>
-            Devenir un leader en solutions technologiques innovantes, en alliant expertise
-            technique et créativité pour accompagner la transformation digitale
-            des entreprises partout dans le monde.
-          </p>
+        
+          <h1 
+          className=" text-center text-3xl md:text-5xl font-bold leading-tight">
+            Derrière chaque succès : une équipe dévouée
+          </h1>
+        
         </motion.div>
-
-      </section>
       
-      {/* Second bloc */}
-      <section className="min-h-screen flex flex-col md:flex-row justify-center md:justify-between items-center text-white px-4 md:px-6 py-8 space-y-6 md:space-y-0 shadow-lg">
+      </div>
+        {/* Mission */}
+      <div className="container flex justify-between bg-gradient-to-r 
+      from-[#015967]/5   
+      relative z-10 p-6 " 
+      >
 
-        {/* Presentation de l'equipe */}
         <motion.div
-          initial={{ y:-100, opacity: 0 }}
+          initial={{ y:-400, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: false }}
-          className="p-8 m-4 rounded-lg shadow-lg max-w-3xl bg-gradient-to-r from-[#015967] to-[#202B2D]"
+          className=" text-white"
         >
-          <h2 className="flex justify-center text-3xl font-bold mb-4">Notre equipe</h2>
-          <p>
-            Nous sommes une équipe dynamique de 6 passionnés de technologie,
-            unis par la volonté d’offrir des solutions performantes et adaptées
-            aux besoins de nos clients.
-          </p>
+          <h2 
+          className="text-center text-3xl font-serif px-8 p-56 border-0 
+          rounded-b-full shadow-lg bg-gradient-to-b
+          from-[#015967] to-[#202B2D]">
+            Du concept à l’innovation
+          </h2>
 
         </motion.div>
+        <div className="flex flex-col justify-center items-center p-6">
+            <motion.h2
+              initial={{ scale: 0.8, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.4, delay: 0.3 }}
+              className="text-[#015967] text-center text-3xl font-bold mb-8"
+            >
+              Nous transformons vos idées en solutions technologiques
+            </motion.h2>
+            <motion.p 
+              initial={{ scale: 0.8, opacity: 0 }}
+              whileInView={{ scale: 1, opacity: 1 }}
+              transition={{ duration: 0.8, delay: 0.5 }}
+              className="text-center"
+            >
+              Chaque projet commence par une idée. Chez nous, nous combinons créativité et expertise technique pour la transformer en solutions numériques concrètes et performantes. Que ce soit pour un site web, un logiciel sur mesure ou des projets intégrant l’intelligence artificielle, nous veillons à ce que vos idées prennent vie de manière efficace et innovante.
+            </motion.p>
 
-        {/* Pourquoi notre equipe */}
-        <motion.div
-          initial={{ y: 100, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5, delay:0.3 }}
-          viewport={{ once: false }}
-          className="p-8 m-4 rounded-lg shadow-lg max-w-3xl bg-gradient-to-r from-[#202B2D] to-[#015967]"
-        >
-          <h2 className="flex justify-center text-3xl font-bold mb-4">Pourquoi nous ?</h2>
-          <p>
-            Nous maîtrisons un large éventail de technologies : Python, JavaScript,
-            React.js, Nest.js, Node.js, TailwindCSS, TypeScript, Java, C#, C++ et C.
-            Notre expertise nous permet de créer des solutions fiables,
-            évolutives et innovantes.
-          </p>
+        </div>
 
-        </motion.div> 
-
-      </section>
-
-      {/* boutton  Contact */}
-      <div className="mt-6 md:col-spam-2 flex justify-center">
-        <motion.button
-          initial={{ scale: 0.8, opacity: 0 }}
-          whileInView={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 0.4, delay: 0.2 }}
-          className="px-6 py-3 bg-[#015967] text-white rounded-lg shadow-lg hover:bg-[#14a58] transition"
-        >
-          <a href="/Contact">Nous contacter</a>
-        </motion.button>
       </div>
+        {/* tech */}
+      <div className="container">
+        <div className="container p-56">
+          <h2>
+            Notre technologie
+          </h2>
+        </div>
+
+        <div className="container p-56">
+          presentation
+        </div>
+      </div>
+        {/* vision */}
+      <div className="container">
+        <div className="container p-56">
+          <h2>
+            Notre vision
+          </h2>
+        </div>
+
+        <div className="container p-56">
+          qu'est ce qu'on vise  !
+        </div>
+      </div>
+        {/* Pourquoi nous ? */}
+      <div className="container">
+        <div className="container p-56">
+          <h2>
+            Pourquoi nous
+          </h2>
+        </div>
+
+        <div className="container p-56">
+          nos qualité !
+        </div>
+      </div>
+
+        {/* Contact */}
 
     </div>
   )
