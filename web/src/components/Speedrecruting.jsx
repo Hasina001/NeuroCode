@@ -1,13 +1,6 @@
 import React, { useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-/**
- * SpeedRecruitingForm
- * — Formulaire complet pour inscription à une session de speed recruiting
- * — React + TailwindCSS (aucune dépendance UI) + Framer Motion (animations)
- * — Multi-étapes, validation côté client, tags de compétences, sélection de créneaux
- * — Accessible (labels, aria, messages d'erreur)
- */
 
 const steps = [
   { id: 1, title: "Informations" },
@@ -534,10 +527,6 @@ export default function Speedrecruting() {
             </motion.div>
           )}
         </form>
-
-        <div className="mt-10 text-xs text-gray-500 text-center">
-          <p>Astuce : intègre ce composant dans une page, assure-toi que Tailwind est configuré, et remplace l'envoi simulé par un appel API.</p>
-        </div>
       </div>
     </div>
   );
