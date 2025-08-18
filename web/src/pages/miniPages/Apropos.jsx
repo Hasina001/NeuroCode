@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { HiArrowLongRight } from "react-icons/hi2";
 
 const Apropos = () => {
   return (
@@ -104,7 +105,7 @@ const Apropos = () => {
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <div className="text-purple-600 text-4xl mb-4">02</div>
-              <h3 className="text-xl font-medium mb-3 text-gray-800">Mr Aro</h3>
+              <h3 className="text-xl font-medium mb-3 text-gray-800">Rakotoson Aro Ny Aina</h3>
               <p className="text-gray-800 font-light leading-relaxed">Developpeur Frontend</p>
             </motion.div>
 
@@ -183,6 +184,8 @@ const Apropos = () => {
              la fluidité et l’innovation afin de transformer vos idées en 
              solutions mobiles modernes et efficaces, disponibles aussi bien sur Android que sur iOS.
           </p>
+
+          <button className="mt-8 flex justify-between items-center hover:text-blue-500">Détails <HiArrowLongRight className="ml-2 mt-1"/></button>
         </motion.div>
 
         {/* Projet 02 */}
@@ -203,14 +206,14 @@ const Apropos = () => {
                 transform translate-y-1 scale-x-75 origin-left"></span>
             </span>
           </h3>
-          <p className="text-center text-gray-800 font-light leading-relaxed">
+          <p className="text-center text-gray-800 font-light leading-relaxed pt-6">
             Nous concevons et développons des sites web modernes, performants et sur mesure, 
             pensés pour renforcer votre présence en ligne. De la vitrine professionnelle aux 
             plateformes e-commerce avancées, nous transformons vos idées en solutions digitales 
             e fficaces, sécurisées et évolutives.
           </p>
 
-          <button>Voir</button>
+          <button className="mt-9 flex justify-between items-center hover:text-blue-500">Détails <HiArrowLongRight className="ml-2 mt-1"/></button>
 
         </motion.div>
 
