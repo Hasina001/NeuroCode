@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { HiArrowLongRight } from "react-icons/hi2";
 
 const Apropos = () => {
   return (
@@ -16,7 +17,9 @@ const Apropos = () => {
         >
           <div className="text-right">
             <h2 className=" text-2xl md:text-3xl lg:text-4xl font-medium leading-snug tracking-wide">
-              <span className="relative inline-block">
+              <span
+                className="relative inline-block"
+              >
                 L’essence de notre vision
                 <span className="absolute bottom-0 left-0 h-1 w-full bg-purple-500 
                 transform translate-y-1 scale-x-75 origin-left"></span>
@@ -78,76 +81,143 @@ const Apropos = () => {
           </motion.h1>
 
             {/* Presentation equipe */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
             
             {/* Bloc 01 */}
             <motion.div
-              className="bg-gradient-to-br from-purple-50 to-blue-50 rounded-xl p-8 
+              className="bg-gradient-to-br from-[#202B2D]/20 to-[#015967]/40 rounded-xl p-8 
               shadow-sm hover:shadow-md transition-shadow duration-300"
               initial={{ scale: 0.8, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.6 }}
             >
               <div className="text-purple-600 text-4xl mb-4">01</div>
-              <h3 className="text-xl font-medium mb-3 text-gray-800">Nom et Prenom</h3>
-              <p className="text-gray-800 font-light leading-relaxed">Expertise</p>
+              <h3 className="text-xl font-medium mb-3 text-gray-800">Sambatra Elia</h3>
+              <p className="text-gray-800 font-light leading-relaxed">Developpeur IA<br />  </p>
             </motion.div>
 
             {/* Bloc 02 */}
             <motion.div
-              className="bg-gradient-to-br from-blue-50 to-[#015967]/10 rounded-xl p-8 
+              className="bg-gradient-to-br from-[#202B2D]/20 to-[#015967]/40 rounded-xl p-8 
               shadow-sm hover:shadow-md transition-shadow duration-300"
               initial={{ scale: 0.8, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.2 }}
             >
               <div className="text-purple-600 text-4xl mb-4">02</div>
-              <h3 className="text-xl font-medium mb-3 text-gray-800">Nom et Prenom</h3>
-              <p className="text-gray-800 font-light leading-relaxed">Expertise</p>
+              <h3 className="text-xl font-medium mb-3 text-gray-800">Rakotoson Aro Ny Aina</h3>
+              <p className="text-gray-800 font-light leading-relaxed">Developpeur Frontend</p>
             </motion.div>
 
             {/* Bloc 03 */}
             <motion.div
-              className="bg-gradient-to-br from-[#015967]/10 to-green-50 rounded-xl p-8 
+              className="bg-gradient-to-br from-[#202B2D]/20 to-[#015967]/40 rounded-xl p-8 
               shadow-sm hover:shadow-md transition-shadow duration-300"
               initial={{ scale: 0.8, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
               <div className="text-purple-600 text-4xl mb-4">03</div>
-              <h3 className="text-xl font-medium mb-3 text-gray-800">Nom et Prenom</h3>
-              <p className="text-gray-800 font-light leading-relaxed">Expertise</p>
+              <h3 className="text-xl font-medium mb-3 text-gray-800">RAJAONARIVELO Rodin Witman</h3>
+              <p className="text-gray-800 font-light leading-relaxed">Developpeur Fullstack</p>
             </motion.div>
 
             {/* Bloc 04 */}
             <motion.div
-              className="bg-gradient-to-br from-[#015967]/10 to-[#015967]/20 rounded-xl p-8 
+              className="bg-gradient-to-br from-[#202B2D]/20 to-[#015967]/40 rounded-xl p-8 
               shadow-sm hover:shadow-md transition-shadow duration-300"
               initial={{ scale: 0.8, opacity: 0 }}
               whileInView={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
             >
               <div className="text-purple-600 text-4xl mb-4">04</div>
-              <h3 className="text-xl font-medium mb-3 text-gray-800">Nom et Prenom</h3>
-              <p className="text-gray-800 font-light leading-relaxed">Expertise</p>
-            </motion.div>
-
-            {/* Bloc 05 */}
-            <motion.div
-              className="bg-gradient-to-br from-[#015967]/20 to-[#202B2D]/10 rounded-xl p-8 
-              shadow-sm hover:shadow-md transition-shadow duration-300"
-              initial={{ scale: 0.8, opacity: 0 }}
-              whileInView={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-            >
-              <div className="text-purple-600 text-4xl mb-4">05</div>
-              <h3 className="text-xl font-medium mb-3 text-gray-800">Nom et Prenom</h3>
-              <p className="text-gray-800 font-light leading-relaxed">Expertise</p>
+              <h3 className="text-xl font-medium mb-3 text-gray-800">RAPARISON Ny Hasina</h3>
+              <p className="text-gray-800 font-light leading-relaxed">Developpeur Fullstack</p>
             </motion.div>
 
           </div>  
           
         </div>
+
+        <div className="mr-auto mb-12 lg:mb-20 pr-0 lg:pr-4 w-full lg:w-auto max-w-lg">
+
+          {/* Titre */}
+          <motion.h1 
+            className="text-3xl md:text-4xl font-medium text-left mb-16"
+            initial={{ scale: 0.8, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1 }}
+            transition={{ duration: 0.6 }}
+          >
+            <span className="relative inline-block">
+              Ce que nous avons accompli
+              <span className="absolute bottom-0 left-0 h-1 w-full bg-purple-500 
+                transform translate-y-1 scale-x-75 origin-left"></span>
+            </span>
+          </motion.h1>
+
+      </div>
+
+      {/* Bloc projet */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+        {/* Projet 01 */}
+        <motion.div 
+          className="rounded-xl p-8 shadow-sm border border-transparent
+          hover:shadow-md hover:border-blue-500
+          transition-shadow duration-300
+          hover:transition-all hover:duration-800 hover:delay-300
+          "
+          initial={{ scale: 0.8, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.4 }}
+        >
+          <h3 className="text-xl font-medium mb-3 text-gray-800">
+            <span className="relative inline-block">
+              Développement Mobile
+              <span className="absolute bottom-0 left-0 h-1 w-full bg-gradient-to-r from-[#015967] to-purple-500  
+                transform translate-y-1 scale-x-75 origin-left"></span>
+            </span>
+          </h3>
+          <p className="text-center text-gray-800 font-light leading-relaxed">
+            Nous concevons et réalisons des applications mobiles
+             sur mesure, performantes et intuitives, adaptées à vos besoins et à votre audience. 
+             Notre équipe met l’accent sur l’expérience utilisateur, 
+             la fluidité et l’innovation afin de transformer vos idées en 
+             solutions mobiles modernes et efficaces, disponibles aussi bien sur Android que sur iOS.
+          </p>
+
+          <button className="mt-8 flex justify-between items-center hover:text-blue-500">Détails <HiArrowLongRight className="ml-2 mt-1"/></button>
+        </motion.div>
+
+        {/* Projet 02 */}
+        <motion.div
+          className="rounded-xl p-8 shadow-sm border border-transparent
+          hover:shadow-md hover:border-blue-500
+          transition-shadow duration-300
+          hover:transition-all hover:duration-800 hover:delay-300
+          "
+          initial={{ scale: 0.8, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+        >
+          <h3 className="text-xl font-medium mb-3 text-gray-800">
+            <span className="relative inline-block">
+              Développement Web
+              <span className="absolute bottom-0 left-0 h-1 w-full bg-gradient-to-r from-[#015967] to-purple-500  
+                transform translate-y-1 scale-x-75 origin-left"></span>
+            </span>
+          </h3>
+          <p className="text-center text-gray-800 font-light leading-relaxed pt-6">
+            Nous concevons et développons des sites web modernes, performants et sur mesure, 
+            pensés pour renforcer votre présence en ligne. De la vitrine professionnelle aux 
+            plateformes e-commerce avancées, nous transformons vos idées en solutions digitales 
+            e fficaces, sécurisées et évolutives.
+          </p>
+
+          <button className="mt-9 flex justify-between items-center hover:text-blue-500">Détails <HiArrowLongRight className="ml-2 mt-1"/></button>
+
+        </motion.div>
+
+      </div>
         
       </div>
       
