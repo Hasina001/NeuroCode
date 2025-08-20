@@ -83,18 +83,18 @@ const Apropos = () => {
 
         {/* Notre equipe en detail */}
         <div className="py-24 px-6 md:px-12 lg:px-24">
-          <motion.h1 
-            className="text-3xl md:text-4xl font-bold text-center mb-16"
-            initial={{ scale: 0.8, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.6 }}
-          >
+          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 
+          font-bold text-center mb-8 sm:mb-12 md:mb-16 
+          leading-snug tracking-wide px-4
+          ">
             <span className="relative inline-block">
               Découvrer nos développeurs
-              <span className="absolute bottom-0 left-0 h-1 w-full bg-purple-500 
-                transform translate-y-1 scale-x-75 origin-left"></span>
+              <span className="absolute bottom-0 left-1/2 -translate-x-1/2 
+                   h-0.5 sm:h-1 w-3/4 bg-purple-500 
+                   transform translate-y-1 sm:translate-y-1.5 
+                   scale-x-75 origin-center rounded-full"></span>
             </span>
-          </motion.h1>
+          </h2>
 
             {/* Presentation equipe */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-10">
@@ -157,19 +157,14 @@ const Apropos = () => {
 
         <div className="mr-auto mb-8 pr-0 lg:pr-4 w-full lg:w-auto max-w-lg"> 
           {/* Titre */} 
-          <motion.h1 
-          className="text-3xl md:text-4xl font-medium text-left mb-16" 
-          initial={{ scale: 0.8, opacity: 0 }} 
-          whileInView={{ scale: 1, opacity: 1 }} 
-          transition={{ duration: 0.6 }} > 
+          <h1 className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-medium leading-snug tracking-wide"> 
           
            <span className="relative inline-block"> 
             Ce que nous avons accompli 
              <span 
-             className="absolute bottom-0 left-0 h-1 w-full bg-purple-500 transform 
-             translate-y-1 scale-x-75 origin-left"></span> 
+             className="absolute bottom-0 left-1/2 -translate-x-1/2 h-1 w-3/4 bg-purple-500 transform translate-y-1 scale-x-75 origin-left rounded-full"></span> 
             </span> 
-          </motion.h1> 
+          </h1> 
         </div>
 
         {/* Bloc projet */}
