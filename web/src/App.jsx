@@ -1,9 +1,32 @@
+import { useState, useEffect } from 'react'
 import { Outlet } from 'react-router-dom'
 import "./App.css"
 import Navbar from './components/navbar/Navbar'
+import LoadingScreen from './components/Loading/LoadingScreen'
+import visitTracker from './utils/visitTraker'
 import texture from "./assets/absurdity.png"
 
 const App = () => {
+  const [showLoading, setShowLoading] = useState(false);
+
+  useEffect(() => {
+    // Vérifier si c'est la première visite
+    if (visitTracker.isFirstVisit()) {
+      setShowLoading(true);
+      visitTracker.markAsVisited();
+    }
+  }, []);
+
+  const handleLoadingComplete = () => {
+    setShowLoading(false);
+  };
+
+  // Afficher l'écran de chargement si nécessaire
+  if (showLoading) {
+    return <LoadingScreen onLoadingComplete={handleLoadingComplete} />;
+  }
+
+  // Votre application principale
   return (
     <>
       <div
