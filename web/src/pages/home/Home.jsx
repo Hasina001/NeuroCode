@@ -1,10 +1,5 @@
-<<<<<<< Updated upstream
-import React, { useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
-=======
 import { useEffect, useRef } from "react";
 import { Link } from "react-router";
->>>>>>> Stashed changes
 import { animateHomeElements } from "../../components/animations/HomeAnimations";
 import Web from '../../assets/Web.svg';
 import Effet from "../../components/background/Effet";
