@@ -14,8 +14,7 @@ const Apropos = () => {
           className="w-[90%] sm:w-4/5 lg:w-auto max-w-lg mx-auto lg:mx-0 lg:ml-auto mb-8 lg:mb-20 pr-0 lg:pr-4"
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.2 }}
-          viewport={{ once: true }}
+          transition={{ duration:0.8, delay: 0.2 }}
         >
           <div className="text-center lg:text-right">
             <h2 className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-medium leading-snug tracking-wide">
@@ -34,10 +33,10 @@ const Apropos = () => {
 
         {/* Bannière d'image empilé l'une sur l'autre */}
         <motion.div 
-        initial={{ scale: 0.8, opacity:0 }}
-        whileInView={{ scale: 1, opacity: 1 }}
+        initial={{ x:100, opacity:0 }}
+        whileInView={{ x:0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.5 }}
-        className="relative w-full max-w-4xl mx-auto h-96 bg-white overflow-hidden">
+        className="relative w-full max-w-4xl mx-auto h-96 bg-white overflow-hidden mb-24">
           {/* Background business illustration */}
           <div className="absolute inset-0">
             {/* Cette div contiendrait l'illustration de fond de l'image 2 */}
@@ -69,8 +68,8 @@ const Apropos = () => {
 
           {/* Main purple banner overlay */}
           <div className="absolute top-1/2 right-8 transform -translate-y-1/2">
-            <div className="bg-gradient-to-r from-purple-600 to-teal-500 rounded-2xl px-8 py-6 text-white shadow-2xl max-w-sm">
-              <h1 className="text-2xl font-bold leading-tight text-center">
+            <div className="bg-gradient-to-r from-purple-600 to-teal-500 rounded-2xl px-8 sm:px-12 py-6 sm:py-10 text-white shadow-2xl max-w-sm">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight text-center">
                 Derrière chaque<br />
                 succès : une<br />
                 équipe dévouée
@@ -80,8 +79,12 @@ const Apropos = () => {
         </motion.div>
         {/* Notre equipe en detail */}
         <div className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 md:px-8 lg:px-24 max-w-full">
-          <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 
-          font-bold text-center mb-8 sm:mb-12 md:mb-16 
+          <motion.h2 
+          initial={{ x:100, opacity:0 }}
+          whileInView={{ x:0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 
+          font-bold text-center mb-8 sm:mb-24 md:mb-40 
           leading-snug tracking-wide px-2
           ">
             <span className="relative inline-block">
@@ -91,10 +94,10 @@ const Apropos = () => {
                    transform translate-y-1 sm:translate-y-1.5 
                    scale-x-75 origin-center rounded-full"></span>
             </span>
-          </h2>
+          </motion.h2>
 
             {/* Presentation equipe */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-10 w-full">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-10 w-full mb-24">
             
             {/* Bloc 01 */}
             <motion.div
@@ -152,16 +155,20 @@ const Apropos = () => {
           
         </div>
 
-        <div className="mr-auto mb-8 pr-0 lg:pr-4 w-full lg:w-auto max-w-full px-4 sm:px-6"> 
+        <div className="mr-auto mb-24 pr-0 lg:pr-4 w-full lg:w-auto max-w-full px-4 sm:px-6 "> 
           {/* Titre */} 
-          <h1 className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-medium leading-snug tracking-wide"> 
+          <motion.h1 
+          initial={{ x:100, opacity:0 }}
+          whileInView={{ x:0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          className="text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-medium leading-snug tracking-wide"> 
           
            <span className="relative inline-block"> 
             Ce que nous avons accompli 
              <span 
              className="absolute bottom-0 left-1/2 -translate-x-1/2 h-1 w-3/4 bg-purple-500 transform translate-y-1 scale-x-75 origin-left rounded-full"></span> 
             </span> 
-          </h1> 
+          </motion.h1> 
         </div>
 
         {/* Bloc projet */}
@@ -177,7 +184,7 @@ const Apropos = () => {
             "
             initial={{ scale: 0.8, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.4 }}
+            transition={{ duration: 0.8 }}
           >
             <h3 className="text-lg sm:text-xl md:text-2xl font-medium mb-3 text-gray-800">
               <span className="relative inline-block">
@@ -207,7 +214,7 @@ const Apropos = () => {
             "
             initial={{ scale: 0.8, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.6 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
           >
             <h3 className="text-lg sm:text-xl md:text-2xl font-medium mb-3 text-gray-800">
               <span className="relative inline-block">
