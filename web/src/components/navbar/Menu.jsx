@@ -39,6 +39,7 @@ const Menu = () => {
                             navList.map((list, index) => (
                                 <li key={index} className="mt-3 px-4">
                                     <NavLink
+                                        onClick={() => setIsMenuOpen(false)}
                                         to={list.path.toLowerCase()}
                                         className={({ isActive }) =>
                                             isActive ? "text-blue-900 font-bold" : ""
