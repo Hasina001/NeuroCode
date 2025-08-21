@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { HiArrowLongRight } from "react-icons/hi2";
+import { Link } from "react-router-dom"
 
 const Apropos = () => {
   return (
@@ -32,7 +33,51 @@ const Apropos = () => {
         </motion.div>
 
         {/* Bannière d'image empilé l'une sur l'autre */}
+        <motion.div 
+        initial={{ scale: 0.8, opacity:0 }}
+        whileInView={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 0.8, delay: 0.5 }}
+        className="relative w-full max-w-4xl mx-auto h-96 bg-white overflow-hidden">
+          {/* Background business illustration */}
+          <div className="absolute inset-0">
+            {/* Cette div contiendrait l'illustration de fond de l'image 2 */}
+            <div className="w-full h-full bg-gray-100 relative">
+              {/* Simulation des éléments d'illustration business */}
+              <div className="absolute top-8 left-8 w-16 h-12 border-2 border-gray-400 rounded bg-white"></div>
+              <div className="absolute top-12 left-32 w-8 h-8 rounded-full border-2 border-green-500 flex items-center justify-center">
+                <span className="text-green-500 font-bold">$</span>
+              </div>
+              <div className="absolute top-6 left-48 w-12 h-12 rounded-full border-2 border-gray-400"></div>
+              <div className="absolute top-16 left-64 w-6 h-6 border border-blue-500 rounded"></div>
+              <div className="absolute top-20 right-32 w-8 h-8 rounded border-2 border-purple-500"></div>
+              <div className="absolute top-8 right-16 w-10 h-10 rounded-full border-2 border-pink-500"></div>
+              
+              {/* World map representation */}
+              <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2">
+                <div className="w-64 h-32 relative">
+                  <div className="w-full h-full bg-green-300 rounded-lg opacity-60"></div>
+                </div>
+              </div>
+              
+              {/* Additional business icons scattered */}
+              <div className="absolute bottom-20 left-8 w-8 h-8 border-2 border-blue-600 rounded"></div>
+              <div className="absolute bottom-16 left-24 w-6 h-6 bg-orange-500 rounded-full"></div>
+              <div className="absolute bottom-24 right-24 w-10 h-6 border border-gray-500 rounded"></div>
+              <div className="absolute bottom-12 right-8 w-8 h-8 border-2 border-cyan-500 rounded-full"></div>
+            </div>
+          </div>
 
+          {/* Main purple banner overlay */}
+          <div className="absolute top-1/2 right-8 transform -translate-y-1/2">
+            <div className="bg-gradient-to-r from-purple-600 to-teal-500 rounded-2xl px-8 py-6 text-white shadow-2xl max-w-sm">
+              <h1 className="text-2xl font-bold leading-tight text-center">
+                Derrière chaque<br />
+                succès : une<br />
+                équipe dévouée
+              </h1>
+            </div>
+          </div>
+        </motion.div>
         {/* Notre equipe en detail */}
         <div className="py-12 sm:py-16 md:py-24 px-4 sm:px-6 md:px-8 lg:px-24 max-w-full">
           <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 
@@ -409,23 +454,24 @@ const Apropos = () => {
           </motion.div>
           
           {/* Bouton - positionné différemment selon la taille d'écran */}
-          <motion.div
+           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.8, delay: 1 }}
-            className="lg:flex-shrink-0 lg:self-end w-full lg:w-auto"
+            className="flex justify-center lg:justify-end w-full lg:w-auto"
           >
-            <button className="w-full sm:w-auto px-4 py-2 sm:px-6 sm:py-3 lg:px-8 lg:py-4 
-              text-sm sm:text-base lg:text-lg xl:text-xl
-              text-white font-bold rounded-xl shadow-xl
-              bg-blue-400 hover:bg-blue-900 
-              transition-colors duration-300
-              lg:mb-40"
+            <span
+              className="w-full sm:w-auto px-4 py-2 sm:px-6 sm:py-3 lg:px-8 lg:py-4
+                text-sm sm:text-base lg:text-lg xl:text-xl
+                text-white font-bold rounded-xl shadow-xl
+                bg-blue-400 hover:bg-blue-900 
+                transition-colors duration-300
+                lg:mb-40 flex justify-center"
             >
-              <a href="/Contact" className="block w-full h-full">
+              <Link to="/Contact" className="block w-full h-full text-center">
                 Contactez Nous
-              </a>
-            </button>
+              </Link>
+            </span>
           </motion.div>
           
         </div>
