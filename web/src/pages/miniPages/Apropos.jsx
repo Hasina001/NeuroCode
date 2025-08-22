@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 const Apropos = () => {
   return (
-    <div className="overflow-x-hidden">
+    <div className="container overflow-x-hidden">
       
         {/* Notre equipe */}
       <div className="flex flex-col p-4 md:p-8 lg:p-12 mb-20 max-w-full">

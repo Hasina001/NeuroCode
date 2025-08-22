@@ -1,8 +1,6 @@
-import React from 'react';
-
 export default function ContactForm() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
+    <div className="container min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 md:p-8">
       <div className="bg-white rounded-3xl shadow-2xl p-6 sm:p-8 md:p-12 w-full max-w-4xl">
         
         {/* Section d'intro */}
