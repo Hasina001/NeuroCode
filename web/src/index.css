@@ -1,4 +1,8 @@
 @import "tailwindcss";
+.{
+  margin: 0px;
+  padding: 0px;
+}
 
 
 .container {
@@ -34,3 +38,4 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
+
